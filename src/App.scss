@@ -1,0 +1,142 @@
+.app-wrapper {
+  display: flex;
+  width: 800px;
+  border: 5px solid white;
+  background-color: rgb(56, 5, 110);
+  box-shadow: 0 0 25px #29b9fc;
+  flex-direction: column;
+  padding-bottom: 20px;
+  min-height: 450px;
+  position: relative;
+
+  .modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    width: 350px;
+    height: 150px;
+    display: flex;
+    background-color: #29b9fc;
+    color: #e9f5ff;
+    z-index: 999;
+
+    .modal-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      padding: 10px;
+
+      p {
+        font-size: 22px;
+      }
+
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 28px;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  .app-notes {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+
+    .empty-note {
+      width: 100%;
+      text-align: center;
+      font-size: 25px;
+      background-color: rgb(77, 3, 156);
+      padding: 5px 0;
+      border: 1px solid white;
+    }
+
+    .app-task {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      background-color: rgb(77, 3, 156);
+      padding: 10px;
+      transition: 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #29b9fc;
+        color: white;
+      }
+
+      .task-title {
+        font-size: 25px;
+        word-break: break-all;
+      }
+
+      .task-description {
+        font-size: 15px;
+        word-break: break-all;
+
+      }
+    }
+  }
+
+  .note-adder {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 50px;
+
+    input {
+      &:disabled {
+        opacity: 0.5;
+      }
+
+      width: 750px;
+      height: 40px;
+      padding: 0 20px;
+      background-color: rgb(77, 3, 156);
+      border: 1px solid white;
+      outline: 0;
+      color: white;
+      font-size: 18px;
+      font-family: 'Tilt Neon', sans-serif;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: rgb(123, 0, 255);
+      border: 1px solid white;
+      outline: 0;
+      color: white;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+
+    }
+  }
+}

@@ -1,0 +1,24 @@
+:root {
+  --primary-color: red;
+  --secondary-color: blue;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-image: url("./images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  font-family: 'Tilt Neon', sans-serif;
+  color: white;
+}
