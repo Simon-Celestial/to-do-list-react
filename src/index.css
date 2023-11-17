@@ -1,6 +1,7 @@
 :root {
-  --primary-color: red;
-  --secondary-color: blue;
+  --primary-color: rgb(77, 3, 156);
+  --secondary-color: rgb(123, 0, 255);
+  --dark-purple-color: rgb(40, 5, 77)
 }
 * {
   margin: 0;

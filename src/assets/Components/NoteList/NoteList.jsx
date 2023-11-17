@@ -1,5 +1,6 @@
 import React from 'react';
 import Note from "../Note";
+import PropTypes from "prop-types";
 
 const NoteList = ({
                       tasks, removeTask
@@ -15,5 +16,10 @@ const NoteList = ({
             )
         )}</div>;
 };
+
+NoteList.propTypes = {
+    tasks: PropTypes.object.isRequired,
+    removeTask: PropTypes.func.isRequired,
+  };
 
 export default NoteList;

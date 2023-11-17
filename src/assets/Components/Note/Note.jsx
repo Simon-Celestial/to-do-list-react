@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Note = ({
                   removeTask, task, index,
@@ -8,5 +9,11 @@ const Note = ({
         <i className="task-description">{task.description}</i>
     </div>
 };
+
+Note.propTypes = {
+    removeTask: PropTypes.func.isRequired,
+    task: PropTypes.object.isRequired,
+    index: PropTypes.number.isRequired,
+  };
 
 export default Note;
